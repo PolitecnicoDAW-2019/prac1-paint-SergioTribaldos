@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sergio Paint</title>
+    <link rel="stylesheet" href="resources/font-awesome/css/font-awesome.css" />
+  </head>
+  <body>
+    <div class="shape-selector-area">
+      <div class="shape-selector">
+        <i class="icon-pencil icon" id="pencilBtn"></i>
+        <i class="icon" id="squareBtn">&#9632;</i>
+        <i class="icon-circle icon" id="circleBtn"></i>
+        <i class="icon" id="triangleBtn">&#9650;</i>
+
+        <i class="fa fa-cloud" style="font-size:24px;"></i>
+      </div>
+    </div>
+    <div class="canvas-area">
+      <canvas id="canvas" class="canvas" width="850" height="550"></canvas>
+    </div>
+    <div class="toolkit-area">
+      <div class="color-selector">
+        <input type="color" id="color-selector" class="color" value="#ff0000" />
+      </div>
+      <div class="size-selector">
+        <input
+          type="range"
+          id="size-selector"
+          class="size"
+          min="1"
+          max="80"
+          value="40"
+        />
+      </div>
+      <div class="file-selector">
+        <label for="file-selector">
+          <i class="icon-folder-open iconRight"></i>
+        </label>
+
+        <input type="file" name="myFile" id="file-selector" />
+      </div>
+      <div class="clear-selector">
+        <i class="icon-eraser iconRight" id="clearBtn"></i>
+      </div>
+      <div class="clear-selector">
+        <i class="icon-save iconRight" id="saveBtn"></i>
+      </div>
+    </div>
+
+    <link
+      rel="stylesheet"
+      href="resources/bootstrap-4.3.1/css/bootstrap.min.css"
+    />
+
+    <script src="resources/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    <script src="node_modules/file-saver/src/FileSaver.js"></script>
+    <link rel="stylesheet" href="view/paint.css" />
+    <script src="view/paint.view.js"></script>
+    <script src="controller/paint.controller.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>

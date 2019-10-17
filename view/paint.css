@@ -1,0 +1,82 @@
+body {
+  background: #0362fc;
+}
+.canvas-area {
+  height: 600px;
+  width: 75%;
+  float: left;
+}
+.toolkit-area {
+  height: 600px;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin: 0 auto;
+}
+.shape-selector-area {
+  height: 600px;
+  width: 10%;
+  float: left;
+  margin: 0 auto;
+}
+
+.canvas {
+  border: 3px solid black;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: block;
+  background: white;
+}
+.canvas:hover {
+  cursor: crosshair;
+}
+
+.icon {
+  margin-top: 10%;
+  font-size: 100px;
+}
+.iconRight {
+  font-size: 80px;
+}
+
+.shape-selector,
+.size-selector,
+.file-selector,
+.color-selector,
+.clear-selector {
+  margin-top: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.shape-selector {
+  margin-top: 50px;
+}
+.file-selector > input {
+  display: none;
+}
+
+.color,
+.size {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 50px;
+  width: 70%;
+}
+
+input[type='color' i] {
+  border: none;
+  background-color: transparent;
+}
+.size-selector {
+  flex-direction: column;
+}
+.size {
+  margin-top: 0;
+}
+div.size-selector div {
+  text-align: center;
+}
